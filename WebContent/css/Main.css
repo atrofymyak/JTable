@@ -1,0 +1,722 @@
+/*body		{background-color:003366; margin-left:0; margin-top:0;} */
+body		{background-color:ffffff; margin-left:0; margin-top:0;}
+a		{font-family:arial; font-size:11px; font-weight:bold; color:339999;}
+.bankColumnHeaders	{font-family:arial; font-size:11px; color:ffffff; font-weight:bold;}
+.bankGridHeader {font-family:arial; font-size:16px; color:ff0000; font-weight:normal;}
+.navy10bold	{font-family:arial; font-size:10px; color:003366; font-weight:bold;}
+.navy10text	{font-family:arial; font-size:10px; color:003366; font-weight:bold;}
+.navytext	{font-family:arial; font-size:12px; color:003366;}
+.navymtext	{font-family:verdana; font-size:11px; color:003366;}
+.navymed	{font-family:verdana,arial,helvetica; font-size:11px; color:003366;}
+.navybold	{font-family:arial; font-size:12px; color:003366; font-weight:bold;}
+.navymbold	{font-family:arial; font-size:11px; color:003366; font-weight:bold;}
+.navyQuestion	{font-family:arial; font-size:20px; color:003366; font-weight:bold;}
+.navy20Reg	{font-family:arial; font-size:20px; color:003366; font-weight:normal;}
+.navy16Reg	{font-family:arial; font-size:16px; color:003366; font-weight:normal;}
+.navy14Reg	{font-family:arial; font-size:14px; color:003366; font-weight:normal;}
+.teal16Reg	{font-family:arial; font-size:16px; color:339999; font-weight:normal;}
+.teal14Reg	{font-family:arial; font-size:14px; color:339999; font-weight:normal;}
+.navy11		{font-family:arial; font-size:11px; color:003366;}
+.navysmall	{font-family:arial; font-size:10px; color:003366;}
+.modules	{font-family:verdana; font-size:10px; color:003366;font-weight:bold}
+.navylink	{font-family:verdana; font-size:10px; color:003366; font-weight:bold;}
+.blacktext	{font-family:arial; font-size:12px; color:000000;}
+.tealtext	{font-family:arial; font-size:12px; color:339999; font-weight:normal;}
+.tealbold	{font-family:arial; font-size:12px; color:339999; font-weight:bold;}
+.tealbold14	{font-family:arial; font-size:14px; color:339999; font-weight:bold;}
+.tealbold16	{font-family:arial; font-size:16px; color:339999; font-weight:bold;}
+.tealsmall	{font-family:arial; font-size:10px; color: #339999; font-weight:normal; background-color:#ffffff;}
+.tealmed	{font-family:arial; font-size:11px; color:339999; font-weight:normal;}
+.tealmedbold	{font-family:arial; font-size:11px; color:339999; font-weight:bold;}
+.teal12	{font-family:arial; font-size:12px; color:339999; font-weight:normal;}
+.graysmall	{font-family:arial; font-size:10px; color:333333;}
+.gray14		{font-family:arial; font-size:14px; color:333333;}
+.goldtext	{font-family:arial; font-size:12px; font-weight:bold; color:cc9900;}
+.goldsmall	{font-family:arial; font-size:10px; color:cc9900;}	
+.goldbold	{font-family:arial; font-size:12px; color:cc9900; font-weight:bold;}
+.blue		{font-family:arial; font-size:12px; color:336699; font-weight:bold;}
+.green		{font-family:arial; font-size:12px; color:339999; font-weight:bold;}
+.lightgreen	{font-family:arial; font-size:11px; color:ccff99; font-weight:bold;}
+.greentextbold	{font-family:arial; font-size:14px; color:003333; font-weight:bold;}
+.whitetext	{font-family:arial,helvetica; font-size:10px; color:#ffffff; font-weight:bold;}
+.whitebold	{font-family:arial,helvetica; font-size:11px; color:#ffffff; font-weight:bold;}
+.whitetextbold	{font-family:arial,helvetica; font-size:12px; color:#ffffff; font-weight:bold;}
+.white14bold	{font-family:arial,helvetica; font-size:14px; color:#ffffff; font-weight:bold;}
+.whitemed	{font-family:verdana,arial,helvetica; font-size:11px; color:#ffffff;}
+.labelText	{font-family:verdana; font-size:12px; color:003366;}
+.columnHeaderClass {font-family:arial; font-size:11px; color:003366; font-weight:bold;}
+.labelClass {font-family:arial; font-size:11px; color:003366; font-weight:bold;}
+.controlClass {background-color: #FFFFFF; border: 1px solid #669999; color: #003366; font-size: 9pt;}
+.TEXT {padding: 2px; background-color: #FFFFFF; border: 1px solid #669999; color: #003366; font-size: 9pt;}
+.LABEL {padding: 2px; background-color: #FFFFFF; border: 0px solid #FFFFFF; color: #003366; font-size: 9pt;}
+.CURRENCY {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 1px solid #669999; color: #003366; font-size: 9pt;}
+.NUMBER {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 1px solid #669999; color: #003366; font-size: 9pt;}
+.MM-DD-CCYY {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 1px solid #669999; color: #003366; font-size: 9pt;}
+.TEXTError {padding: 2px; background-color: #FFFFFF; border: 1px solid #F03A07; color: #003366; font-size: 9pt;}
+.CURRENCYError {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 1px solid #F03A07; color: #003366; font-size: 9pt;}
+.NUMBERError {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 1px solid #F03A07; color: #003366; font-size: 9pt;}
+.MM-DD-CCYYError {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 1px solid #F03A07; color: #003366; font-size: 9pt;}
+.TEXT-DISPLAY {padding: 2px; border: 0px solid #669999; color: #003366; font-size: 9pt;}
+.LABEL-DISPLAY {padding: 2px; border: 0px solid #FFFFFF; color: #003366; font-size: 9pt;}
+.CURRENCY-DISPLAY {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 0px solid #669999; color: #003366; font-size: 9pt;}
+.NUMBER-DISPLAY {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 0px solid #669999; color: #003366; font-size: 9pt;}
+.MM-DD-CCYY-DISPLAY {padding: 2px; TEXT-ALIGN: right; background-color: #FFFFFF; border: 0px solid #669999; color: #003366; font-size: 9pt;}
+.cellItemHREF, .cellItemHREF:visited, .cellItemHREF:hover, .cellItemHREF:active { cursor: pointer;  font-size: 9pt; font-weight: normal; color: #339999; text-decoration: none;}
+.SectionHeader {font-family:arial; font-size:16px; color:339999; font-weight:normal;}
+.ControlHeader {font-family:arial; font-size:14px; color:339999; font-weight:normal;}
+
+.casebar {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: arial, helvetica, sans-serif, helv; BACKGROUND-COLOR: #339999
+}
+.whiteboldv {
+	font-family:verdana;
+	font-size:10px;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.whitelarge {
+	font-family:arial,helvetica;
+	font-size:12px;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.siteColor {
+	background:#F2EEB1;
+}
+
+.siteColorSub {
+	background:#FFFCCD;
+}
+
+.bggreen {
+	background:ccffcc;
+}
+
+.bgwhite {
+	background:fffffe;
+}
+
+.header {
+	font-family:verdana,arial,helvetica;
+	font-size:27px;
+	color:339999;
+	font-weight:normal;
+	margin-left:10;
+	margin-top:10;
+	margin-bottom:10;
+}
+.header2 {
+	font-family:verdana,arial,helvetica;
+	font-size:20px;
+	color:339999;
+	font-weight:normal;
+}
+.fontBold14Blue {
+	font-family:verdana,arial,helvetica;
+	font-size:14px;
+	color:#000033;
+	font-weight:bold;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+.fontBold14Maroon {
+	font-family:verdana,arial,helvetica;
+	font-size:14px;
+	color:#990000;
+	font-weight:bold;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+.fontBold14Red {
+	font-family:verdana,arial,helvetica;
+	font-size:14px;
+	color:#CC3300;
+	font-weight:bold;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+.fontBold14RedU {
+	font-family:verdana,arial,helvetica;
+	font-size:14px;
+	color:#CC3300;
+	font-weight:bold;
+	margin-left:10;
+	margin-top:6;
+	text-decoration: underline;
+	margin-bottom:2;
+}
+.header1 {
+	font-family:verdana,arial,helvetica;
+	font-size:20px;
+	color:#FFFFFF;
+	font-weight:normal;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+.screenname {
+	font-family:verdana,arial,helvetica;
+	font-size:18px;
+	color:#FFFFFF;
+	font-weight:normal;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+.screennameWhite {
+	font-family:verdana,arial,helvetica;
+	font-size:16px;
+	color:ffffff;
+	font-weight:normal;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+}.screennameNavyBlue {
+	font-family:verdana,arial,helvetica;
+	font-size:18px;
+	color:003366;
+	font-weight:normal;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+.portfolio {
+	font-family:verdana,arial,helvetica;
+	font-size:14px;
+	color:#FFFFFF;
+	font-weight:normal;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+
+.header2 {
+	font-family:verdana,arial,helvetica;
+	font-size:27px;
+	color:#339999;
+	font-weight:bold;
+	margin-left:170;
+	margin-top:0;
+	margin-bottom:6;
+}
+
+.header3 {
+	font-family:verdana,arial,helvetica;
+	font-size:16px;
+	color:#339999;
+	font-weight:normal;
+	margin-left:10;
+	margin-top:6;
+	margin-bottom:2;
+}
+
+.sub-header {
+	font-family:arial,helvetica;
+	font-size:16px;
+	color:#003366;
+	font-weight:bold;
+	margin-left:6;
+	margin-top:6;
+	margin-bottom:2;
+}
+
+.menu {
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.tabs-3-level {
+	font-family:arial,helvetica;
+	font-size:12px;
+	color:#003366;
+	font-weight:bold;
+	margin-left:6;
+	text-decoration:none;
+}
+
+.tabs {
+	font-family:arial,helvetica;
+	font-size:12px;
+	color:#003366;
+	font-weight:bold;
+	margin-left:6;
+	text-decoration:none;
+}
+
+.colheader {
+	font-family:arial,helvetica;
+	font-size:11px;
+	color:#003366;
+	font-weight:bold;
+	margin-left:6;
+	text-decoration:none;
+}
+
+.help {
+	font-family:arial,helvetica;
+	font-size:12px;
+	color:#339999;
+	font-weight:normal;
+	margin-left:6;
+	margin-top:70;
+}
+
+.productHeader	{
+	font-family:arial;
+	font-size:11px;
+	color:003366;
+	font-weight:bold;
+	margin-left:5;
+	margin-top:5;
+	margin-bottom:5;
+}
+
+.productHeaderInLargeTable	{
+	font-family:arial;
+	font-size:10px;
+	color:003366;
+	font-weight:normal;
+}
+
+.product {
+	font-family:arial;
+	font-size:10px;
+	color:003366;
+	font-weight:normal;
+}
+
+.SectionHeader {
+	font-family:arial;
+	font-size:20px;
+	color:003366;
+	font-weight:normal;
+}
+
+.SectionHeader01 {
+	font-family:arial;
+	font-size:16px;
+	color:cc9900;
+	font-weight:bold;
+}
+.productLink {
+	font-family:arial;
+	font-size:10px;
+	color:cc9900;
+	font-weight:normal;
+}
+.wizardHeader {font-family: Times New Roman; font-size: 14px; color:#669999; margin-bottom:2px; margin-top:1px;}
+.fieldsOn
+{
+	border: 1px solid #669999;
+	background-color: #FFFFEC;
+
+
+}
+.roundedCorner
+{
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #669999;
+	padding:2px;
+	padding-left:5px;
+	color: #003366;
+	font-size: 9pt;
+}
+.productSelection
+{
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #669999;
+	padding:2px;
+	padding-left:5px;
+	color: #003366;
+	font-size: 8pt;
+}
+.accountSelection
+{
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #669999;
+	padding:2px;
+	padding-left:5px;
+	color: #003366;
+	font-size: 8pt;
+}
+.fieldsOff
+{
+	background-color: #FFFFFF;
+	border: 1px solid #669999;
+	color: #003366;
+	font-size: 9pt;
+}
+.fieldsRequired
+{
+	background-color: LightGoldenRodYellow;
+	border: 1px solid #669999;
+	color: #003366;
+	font-size: 9pt;
+}
+.fieldsOptional
+{
+	background-color: PowderBlue ;
+	border: 1px solid #669999;
+	color: #003366;
+	font-size: 9pt;
+}
+.fieldsRequiredError
+{
+	background-color: LightGoldenRodYellow;
+	border: 1px solid Red;
+	color: #003366;
+	font-size: 9pt;
+}
+.fieldsOptionalError
+{
+	background-color: PowderBlue;
+	border: 1px solid Red;
+	color: #003366;
+	font-size: 9pt;
+}
+.fieldsNoBorder
+{
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	color: #003366;
+	font-size: 9pt;
+}
+.fieldsNoBorderBlue
+{
+	background-color: #E0FFFF;
+	border: 1px solid #E0FFFF;
+	color: #003366;
+	font-size: 9pt;
+}
+.fieldsNoBorderRed
+{
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	color: #ff0000;
+	font-size: 9pt;
+}
+.QuestionAnswer
+{
+	background-color: #FFFFFF;
+	border: 1px solid #669999;
+	color: #003366;
+	font-size: 18pt;
+	font-weight:normal;
+}
+
+/* unselected tabs*/
+.wpsTabs, .wpsTabs:visited, .wpsTabs:hover, .wpsTabs:active    {  font-size: 9pt; font-weight: bold; color: #000000; text-decoration: none; }
+
+.wpsSelectedTab, .wpsSelectedTab:visited, .wpsSelectedTab:hover, .wpsSelectedTab:active {  font-size: 9pt; font-weight: bold; color: #003366; text-decoration: none; }
+
+.wpsGroupSelectedTab, .wpsGroupSelectedTab:visited, .wpsGroupSelectedTab:hover, .wpsGroupSelectedTab:active {  cursor:crosshair; font-size: 09px; font-weight: bold; color: #003366; text-decoration: none;   font-family: arial; }nt-family: arial; }
+.wpsSubGroupSelectedTab, .wpsSubGroupSelectedTab:visited, .wpsSubGroupSelectedTab:hover, .wpsSubGroupSelectedTab:active { cursor: pointer; font-family:arial; font-size:11px; color:003366; font-weight:bold; text-decoration: none;}
+.wpsSubSubSelectedTab, .wpsSubSubSelectedTab:visited, .wpsSubSubSelectedTab:hover, .wpsSubSubSelectedTab:active {cursor: pointer;   font-size: 8pt; font-weight: bold; color: #009933; text-decoration: none; }
+.specialHREF, .specialHREF:visited, .specialHREF:hover, .specialHREF:active { cursor: pointer;  font-size: 10pt; font-weight: normal; color: #339999; text-decoration: none; background-color:#ffffff; }
+.wpsReferenceDataTab, .wpsReferenceDataTab:visited, .wpsReferenceDataTab:hover, .wpsReferenceDataTab:active { cursor: pointer;  font-family: arial; font-size: 12pt; font-weight: normal; color: #339999; text-decoration: none; background-color:#ffffff; }
+.wpsMainMenuTab, .wpsMainMenuTab:visited, .wpsMainMenuTab:hover, .wpsMainMenuTab:active { cursor: pointer;  font-family: arial; font-size: 16pt; font-weight: bold; color: #339999; text-decoration: none; background-color:#ffffff; }
+.subMenu, .specialHREF:visited, .specialHREF:hover, .specialHREF:active { cursor: pointer;  font-size: 10pt; font-weight: normal; color: #003366; text-decoration: none; background-color:#ffffff; }
+.subMenuTwo, .specialHREF:visited, .specialHREF:hover, .specialHREF:active { cursor: pointer;  font-size: 10pt; font-weight: normal; color: #66B7ED; text-decoration: none; background-color:#ffffff; }
+
+TABLE 
+{
+	FONT: 12px Verdana, Geneva, Arial, Helvetica, sans-serif; COLOR: #000
+}
+TD {
+	FONT: 12px Verdana, Geneva, Arial, Helvetica, sans-serif; COLOR: #000
+}
+A {
+	FONT: 12px Verdana, Geneva, Arial, Helvetica, sans-serif; COLOR: #000
+}
+H1 {
+	MARGIN: 0px 0px 5px; FONT: 18px Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+H2 {
+	MARGIN: 0px 0px 5px; FONT: 16px Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+H3 {
+	MARGIN: 0px 0px 15px; FONT: 13px Verdana, Geneva, Arial, Helvetica, sans-serif; COLOR: #008000
+}
+DIV.tableContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1104px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 333px
+}
+DIV.firstContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 666px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 200px
+}
+DIV.secondContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 495px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 450px
+}
+DIV.thirdContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 575px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 233px
+}
+DIV.fourthContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 575px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 190px
+}
+DIV.transactionContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 234px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 670px
+}
+DIV.dataElementContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 500px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 400px
+}
+DIV.elementDetailContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 500px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 200px
+}
+UNKNOWN 
+{
+	OVERFLOW: hidden; WIDTH: 1086px
+}
+DIV.tableContainer TABLE 
+{
+	FLOAT: left; WIDTH: 1086px
+}
+DIV.firstContainer TABLE 
+{
+	FLOAT: left; WIDTH: 648px
+}
+DIV.secondContainer TABLE 
+{
+	FLOAT: left; WIDTH: 477px
+}
+DIV.thirdContainer TABLE 
+{
+	FLOAT: left; WIDTH: 557px
+}
+UNKNOWN {
+	WIDTH: 10986px
+}
+THEAD.fixedHeader TR 
+{
+	POSITION: relative
+}
+UNKNOWN {
+	DISPLAY: block
+}
+THEAD.fixedHeader TH {
+	BORDER-RIGHT: #b74 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #eb8 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: normal; BACKGROUND: #c96; PADDING-BOTTOM: 4px; BORDER-LEFT: #eb8 1px solid; PADDING-TOP: 4px; TEXT-ALIGN: center
+}
+/*
+THEAD.fixedHeader TH {
+	BORDER-RIGHT: #b74 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #eb8 1px solid; PADDING-LEFT: 3px; FONT-WEIGHT: normal; BACKGROUND: #c96; PADDING-BOTTOM: 4px; BORDER-LEFT: #eb8 1px solid; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+*/
+THEAD.fixedHeader A {
+	DISPLAY: block; WIDTH: 100%; COLOR: #fff; TEXT-DECORATION: none
+}
+THEAD.fixedHeader A:link {
+	DISPLAY: block; WIDTH: 100%; COLOR: #fff; TEXT-DECORATION: none
+}
+THEAD.fixedHeader A:visited {
+	DISPLAY: block; WIDTH: 100%; COLOR: #fff; TEXT-DECORATION: none
+}
+THEAD.fixedHeader A:hover {
+	DISPLAY: block; WIDTH: 100%; COLOR: #fff; TEXT-DECORATION: underline
+}
+UNKNOWN {
+	DISPLAY: block; OVERFLOW: auto; WIDTH: 100%; HEIGHT: 262px
+}
+/*
+TBODY.scrollContent TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 4px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+TBODY.scrollContent TR.normalRow TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 4px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+TBODY.scrollContent TR.alternateRow TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 4px; BACKGROUND: #eee; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+TBODY.scrollContent TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-BOTTOM: #ccc 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: normal; BACKGROUND: #fff; PADDING-BOTTOM: 4px; BORDER-LEFT: none; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+TBODY.scrollContent TR.normalRow TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: #ddd 1px solid;
+}
+TBODY.scrollContent TR.alternateRow TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 0px; BACKGROUND: #eee; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+*/
+TBODY.scrollContent TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-BOTTOM: #ccc 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; BORDER-LEFT: none; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+TBODY.scrollContent TR.normalRow TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: #ddd 1px solid;
+}
+TBODY.scrollContent TR.alternateRow TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 0px; BACKGROUND: #eee; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+UNKNOWN {
+	WIDTH: 200px
+}
+UNKNOWN {
+	WIDTH: 240px
+}
+UNKNOWN {
+	WIDTH: 316px
+}
+UNKNOWN {
+	WIDTH: 200px
+}
+UNKNOWN {
+	WIDTH: 240px
+}
+UNKNOWN {
+	WIDTH: 300px
+}
+DIV.ruleListContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 754px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 560px
+}
+DIV.ruleListTable TABLE 
+{
+	FLOAT: left; WIDTH: 746px
+}
+DIV.ruleEditContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 754px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 200px
+}
+DIV.reserveWordContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 754px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 030px
+}
+DIV.ruleEditContainer TABLE 
+{
+	FLOAT: left; WIDTH: 736px
+}
+TBODY.ruleEditContainer TD {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-BOTTOM: #ccc 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: normal; BACKGROUND: #fff; PADDING-BOTTOM: 4px; BORDER-LEFT: none; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+DIV.elementListContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 754px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 140px
+}
+DIV.elementListContainer TABLE 
+{
+	FLOAT: left; WIDTH: 736px
+}
+DIV.halfScreenContainer285
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 754px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 285px
+}
+DIV.tableTasks 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1104px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 150px
+}
+DIV.tableTasksHeader 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1250px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 20px
+}
+TBODY.regularTable TD {
+	BORDER-RIGHT: #ccc 0px solid; PADDING-RIGHT: 0px; BORDER-BOTTOM: #ccc 0px solid; PADDING-LEFT: 1px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; BORDER-LEFT: none; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+TBODY.regularTable TR.normalRow TD {
+	BORDER-RIGHT: #ccc 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ddd 0px solid; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: #ddd 1px solid;
+}
+TBODY.regularTable TR.alternateRow TD {
+	BORDER-RIGHT: #ccc 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ddd 0px solid; PADDING-LEFT: 0px; BACKGROUND: #eee; PADDING-BOTTOM: 3px; PADDING-TOP: 2px; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.tableAdditionalCases 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1104px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 200px
+}
+DIV.tableReferenceData 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1250px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 200px
+}
+DIV.tableCaseTasks 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1250px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 440px
+}
+DIV.halfScreenContainer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1250px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 315px
+}
+DIV.columnHeader 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1250px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 20px
+}
+DIV.columnHeader2 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1250px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 39px
+}
+DIV.MainDataSection
+{
+	CLEAR: both; BORDER-RIGHT: #963 0px solid; BORDER-TOP: #963 0px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 0px solid; WIDTH: 1350px; BORDER-BOTTOM: #963 0px solid; HEIGHT: 610px
+}
+DIV.NewAccountSection
+{
+	border-radius: 10px; CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 1px solid; WIDTH: 1340px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 590px
+}
+DIV.LeftMenuSection
+{
+	border-radius: 10px; CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 1px solid; WIDTH: 295px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 480px
+}
+DIV.ListOfElementsPickerSection
+{
+	border-radius: 10px; CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 1px solid; WIDTH: 420px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 045px
+}
+DIV.ListOfElementsFilterSection
+{
+	border-radius: 10px; CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 1px solid; WIDTH: 420px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 030px
+}
+DIV.ListOfElementsSectionHeader
+{
+	CLEAR: both; BORDER-RIGHT: #963 0px solid; BORDER-TOP: #963 0px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 0px solid; WIDTH: 400px; BORDER-BOTTOM: #963 0px solid; HEIGHT: 35px
+}
+DIV.ListOfElementsSection
+{
+	border-radius: 10px; CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; overflow-y : hidden; overflow-x : hidden; BORDER-LEFT: #963 1px solid; WIDTH: 420px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 360px
+}
+DIV.ListOfElementsSectionData
+{
+	CLEAR: both; BORDER-RIGHT: #963 0px solid; BORDER-TOP: #963 0px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 0px solid; WIDTH: 400px; BORDER-BOTTOM: #963 0px solid; HEIGHT: 320px
+}
+DIV.SelectedElements
+{
+	border-radius: 10px; CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; overflow-y : hidden; overflow-x : hidden; BORDER-LEFT: #963 1px solid; WIDTH: 420px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 220px
+}
+DIV.SelectedElementsHeader
+{
+	CLEAR: both; BORDER-RIGHT: #963 0px solid; BORDER-TOP: #963 0px solid; overflow-y : hidden; overflow-x : hidden; BORDER-LEFT: #963 0px solid; WIDTH: 400px; BORDER-BOTTOM: #963 0px solid; HEIGHT: 35px
+}
+DIV.SelectedElementsData
+{
+	CLEAR: both; BORDER-RIGHT: #963 0px solid; BORDER-TOP: #963 0px solid; overflow-y : auto; overflow-x : hidden; BORDER-LEFT: #963 0px solid; WIDTH: 400px; BORDER-BOTTOM: #963 0px solid; HEIGHT: 170px
+}
+DIV.EditElements
+{
+	border-radius: 10px; CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; overflow-y : hidden; overflow-x : hidden; BORDER-LEFT: #963 1px solid; WIDTH: 870px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 465px
+}
+DIV.EditElementsHeader
+{
+	CLEAR: both; BORDER-RIGHT: #963 0px solid; BORDER-TOP: #963 0px solid; overflow-y : hidden; overflow-x : hidden; BORDER-LEFT: #963 0px solid; WIDTH: 870px; BORDER-BOTTOM: #963 0px solid; HEIGHT: 52px
+}
+DIV.EditElementsData
+{
+	CLEAR: both; BORDER-RIGHT: #963 0px solid; BORDER-TOP: #963 0px solid; overflow-y : Auto; overflow-x : hidden; BORDER-LEFT: #963 0px solid; WIDTH: 870px; BORDER-BOTTOM: #963 0px solid; HEIGHT: 410px
+}
+DIV.tableCustomer 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1290px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 100px
+}
+DIV.tableCustomerHeader 
+{
+	CLEAR: both; BORDER-RIGHT: #963 1px solid; BORDER-TOP: #963 1px solid; OVERFLOW: auto; BORDER-LEFT: #963 1px solid; WIDTH: 1290px; BORDER-BOTTOM: #963 1px solid; HEIGHT: 20px
+}
