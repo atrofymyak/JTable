@@ -2,7 +2,10 @@ package com.objects.common;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Vector;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -32,6 +35,20 @@ public class ProcessDataController extends HttpServlet {
 		}
 		
 		System.out.println(list.size());
+		
+		Vector<HashMap<String, String>> vData = new Vector<HashMap<String, String>>();
+		for(LinkedTreeMap<String, String> map : list){
+			HashMap<String, String> hashMap = new HashMap<String, String>();
+			for(Iterator<String> it = map.keySet().iterator(); it.hasNext();){
+				String key = it.next();
+				
+				hashMap.put(key, map.get(key));
+			}
+			
+			vData.add(hashMap);
+		}
+		
+		System.out.println("Vector size:  " + vData.size());
 	}
 
 }

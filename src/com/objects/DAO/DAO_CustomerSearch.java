@@ -52,7 +52,7 @@ public class DAO_CustomerSearch {
 			// LoadProperties.getPropertyValue("Vishakha_User.DB.Driver"));
 			Properties connectionProps = new Properties();
 			connectionProps.put("user", "root");
-			connectionProps.put("password", "root");
+			connectionProps.put("password", "1");
 			dbConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/realbank_user", connectionProps);
 			bReturnCode = retrieveData(sSQL, dbConn, sSortOrder);
 			if (null != dbConn) {
@@ -78,7 +78,7 @@ public class DAO_CustomerSearch {
 		
 		Properties connectionProps = new Properties();
 		connectionProps.put("user", "root");
-		connectionProps.put("password", "root");
+		connectionProps.put("password", "1");
 		
 		try {
 			Connection dbConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/realbank_user", connectionProps);
@@ -116,7 +116,7 @@ public class DAO_CustomerSearch {
 		
 		Properties connectionProps = new Properties();
 		connectionProps.put("user", "root");
-		connectionProps.put("password", "root");
+		connectionProps.put("password", "1");
 		try {
 			Connection dbConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/realbank_user", connectionProps);
 			
@@ -261,7 +261,7 @@ public class DAO_CustomerSearch {
 			// LoadProperties.getPropertyValue("Vishakha_User.DB.Driver"));
 			Properties connectionProps = new Properties();
 			connectionProps.put("user", "root");
-			connectionProps.put("password", "root");
+			connectionProps.put("password", "1");
 			dbConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/realbank_user", connectionProps);
 			bReturnCode = retrieveData(sSQL, dbConn, sSortOrder);
 			if (null != dbConn) {
@@ -300,7 +300,7 @@ public class DAO_CustomerSearch {
 			// LoadProperties.getPropertyValue("Vishakha_User.DB.Driver"));
 			Properties connectionProps = new Properties();
 			connectionProps.put("user", "root");
-			connectionProps.put("password", "root");
+			connectionProps.put("password", "1");
 			dbConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/realbank_user", connectionProps);
 			bReturnCode = retrieveData(sSQL, dbConn, sSortOrder);
 			if (null != dbConn) {
